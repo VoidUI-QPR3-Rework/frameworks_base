@@ -40,7 +40,8 @@ import java.util.Map;
 public class PixelPropsUtils {
 
     private static final String TAG = PixelPropsUtils.class.getSimpleName();
-    private static final String DEVICE = "org.pixelexperience.device";
+    private static final String DEVICE = "org.voidui.device";
+    private static final boolean DEBUG = false;
 
     private static final String PACKAGE_GMS = "com.google.android.gms";
     private static final ComponentName GMS_ADD_ACCOUNT_ACTIVITY = ComponentName.unflattenFromString(
