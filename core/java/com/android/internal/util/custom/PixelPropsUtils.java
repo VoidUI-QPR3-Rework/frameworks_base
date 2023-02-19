@@ -299,7 +299,7 @@ public class PixelPropsUtils {
             } else if (processName.toLowerCase().contains("persistent")
                     || processName.toLowerCase().contains("ui")
                     || processName.toLowerCase().contains("learning")) {
-                propsToChange.putAll(propsToChangePixel6Pro);
+                propsToChange.putAll(propsToChangePixel7Pro);
             }
             return;
         }
