@@ -49,6 +49,7 @@ public class PixelPropsUtils {
     private static final boolean DEBUG = false;
 
     private static final Map<String, Object> propsToChangeGeneric;
+    private static final Map<String, Object> propsToChangeUserdebug;
     private static final Map<String, Object> propsToChangePixel7Pro;
     private static final Map<String, Object> propsToChangePixel6Pro;
     private static final Map<String, Object> propsToChangePixel5;
@@ -101,6 +102,10 @@ public class PixelPropsUtils {
             "com.google.android.apps.cameralite"
     };
 
+    private static final String[] packagesToChangeUserdebug = {
+            "com.google.android.apps.nexuslauncher"
+    };
+
     // Codenames for currently supported Pixels by Google
     private static final String[] pixelCodenames = {
             "felix",
@@ -125,6 +130,8 @@ public class PixelPropsUtils {
         propsToChangeGeneric = new HashMap<>();
         propsToChangeGeneric.put("TYPE", "user");
         propsToChangeGeneric.put("TAGS", "release-keys");
+        propsToChangeUserdebug = new HashMap<>();
+        propsToChangeUserdebug.put("TYPE", "userdebug");
         propsToChangePixel7Pro = new HashMap<>();
         propsToChangePixel7Pro.put("BRAND", "google");
         propsToChangePixel7Pro.put("MANUFACTURER", "Google");
@@ -239,6 +246,9 @@ public class PixelPropsUtils {
                     propsToChange.putAll(propsToChangePixel6Pro);
                 } else {
                     propsToChange.putAll(propsToChangePixel5);
+                }
+               if (Arrays.asList(packagesToChangeUserdebug).contains(packageName)) {
+                    propsToChange.putAll(propsToChangeUserdebug);
                 }
             }
 
