@@ -66,14 +66,15 @@ public class PixelPropsUtils {
             "com.google.android.apps.wallpaper",
             "com.google.android.contacts",
             "com.google.android.deskclock",
-            "com.google.android.inputmethod.latin"
+            "com.google.android.inputmethod.latin",
+            "com.google.pixel.livewallpaper",
+            "com.google.android.wallpaper.effects",
+            "com.google.android.apps.emojiwallpaper"
     };
 
     private static final String[] packagesToChangePixel6Pro = {
             "com.google.android.inputmethod.latin",
-            "com.google.android.as",
-            "com.google.android.wallpaper.effects",
-            "com.google.android.apps.emojiwallpaper",
+            "com.google.android.as"
     };
 
     private static final String[] packagesToChangePixelXL = {
