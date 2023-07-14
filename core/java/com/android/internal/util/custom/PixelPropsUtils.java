@@ -50,8 +50,6 @@ public class PixelPropsUtils {
     private static final ComponentName GMS_ADD_ACCOUNT_ACTIVITY = ComponentName.unflattenFromString(
             "com.google.android.gms/.auth.uiflows.minutemaid.MinuteMaidActivity");
 
-    private static final boolean DEBUG = false;
-
     private static final Map<String, Object> propsToChangeGeneric;
     private static final Map<String, Object> propsToChangeUserdebug;
     private static final Map<String, Object> propsToChangePixel7Pro;
@@ -195,9 +193,6 @@ public class PixelPropsUtils {
     private static volatile boolean sIsGms, sIsFinsky, sIsPhotos;
     private static final String sNetflixModel =
             Resources.getSystem().getString(R.string.config_netflixSpoofModel);
-
-    private static volatile boolean sIsGms = false;
-    private static volatile boolean sIsFinsky = false;
 
     static {
         propsToKeep = new HashMap<>();
