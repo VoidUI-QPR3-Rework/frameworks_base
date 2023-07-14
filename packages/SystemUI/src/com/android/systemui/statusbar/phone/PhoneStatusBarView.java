@@ -79,7 +79,6 @@ public class PhoneStatusBarView extends FrameLayout implements Callbacks {
     private int mStatusBarHeight;
     @Nullable
     private Gefingerpoken mTouchEventHandler;
-    private TouchEventHandler mTouchEventHandler;
     @Nullable
     private ViewGroup mStatusBarContents = null;
 
