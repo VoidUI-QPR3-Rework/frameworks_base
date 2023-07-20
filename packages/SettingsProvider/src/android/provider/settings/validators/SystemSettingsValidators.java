@@ -317,5 +317,6 @@ public class SystemSettingsValidators {
                     }
                 });
         VALIDATORS.put(System.FORCE_FULLSCREEN_CUTOUT_APPS, ANY_STRING_VALIDATOR);
+        VALIDATORS.put(System.QS_SHOW_BATTERY_ESTIMATE, BOOLEAN_VALIDATOR);
     }
 }
