@@ -232,9 +232,6 @@ public class BatteryMeterViewController extends ViewController<BatteryMeterView>
                     // update the text for sure if the estimate in the cache was updated
                     mView.updatePercentText();
                     break;
-                case SHOW_BATTERY_PERCENT:
-                    mView.updateShowPercent();
-                    break;
                 case QS_SHOW_BATTERY_ESTIMATE:
                     mView.updatePercentView();
                     break;
